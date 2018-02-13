@@ -1,0 +1,28 @@
+<html>
+<!-- PAINTER canvas base - pure js and canvas html 5 
+wroted by amirhosein nazari
+-->
+
+<head>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+
+<body onload="onload()">
+    <div id="container">Painter webapp</div>
+    <canvas id="painter"> </canvas>
+    <br>
+    <div id="toolbar">
+        <input type="color" name="favcolor" value="#ff0000" onchange="color()" id="color_pick">
+     
+            <input type="number" onchange="set_size()" id="brush_size" placeholder="Enter brush size like : 2" value="2">
+            <button type="submit" onclick="reset()" value="Reset">Reset</button>
+            <button href="#" class="button" id="download">Save</button>
+            <input type="text"  id="filename" placeholder="File name">
+   
+    </div>
+</body>
+
+</html>
